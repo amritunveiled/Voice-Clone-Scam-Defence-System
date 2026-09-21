@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local / sensitive research data
+/data/raw/*
+/data/clones/*
+/data/codec/*
+!data/raw/.gitkeep
+!data/clones/.gitkeep
+!data/codec/.gitkeep
+
+# Large model caches
+models/
+.cache/
+.huggingface/
+
+# Generated figures/tables can be committed only when intentionally selected
+results/tmp/

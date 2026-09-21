@@ -1,0 +1,28 @@
+project:
+  name: Voice Clone Scam Defense
+  seed: 12345
+  languages:
+    core: [Hindi, English]
+    exploratory: [Kannada]
+  sample_rate_hz: 16000
+  channels: 1
+
+models:
+  speaker: speechbrain/spkrec-ecapa-voxceleb
+  spoof_main: SpeechAntiSpoofingBenchmarks/XLSR-SLS
+  spoof_baseline: SpeechAntiSpoofingBenchmarks/AASIST-L
+  whisper: small
+
+benchmark:
+  repeats: 3
+  audio_seconds: 5
+  whisper_compute_type: int8
+  whisper_beam_size: 1
+
+study:
+  test_run_day: 14
+  codecs:
+    amr_nb_kbps: [4.75, 7.4, 12.2]
+    amr_wb_kbps: [12.65]
+    gsm: true
+    opus_kbps: [8, 10, 12]

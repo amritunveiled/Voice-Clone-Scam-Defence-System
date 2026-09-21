@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-21",
+  "benchmark_audio": "results\\tables\\benchmark_5s_16k.wav",
+  "audio_duration_s": 5.0,
+  "seed": 12345,
+  "results": {
+    "xlsr_sls": {
+      "runs_s": [
+        3.121166099968832,
+        2.9335261000087485,
+        2.9819696999620646
+      ],
+      "mean_s": 3.012220633313215,
+      "rtf": 0.602444126662643,
+      "audio_duration_s": 5.0,
+      "model": "SpeechAntiSpoofingBenchmarks/XLSR-SLS",
+      "device": "CPUExecutionProvider",
+      "interpretation": "<1.0 is faster than real time; >=1.0 is slower than real time",
+      "output_shapes": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  }
+}

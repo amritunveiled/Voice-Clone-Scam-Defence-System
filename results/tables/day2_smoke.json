@@ -1,0 +1,819 @@
+{
+  "day": 2,
+  "project_root": "C:\\Users\\SIC\\Documents\\voice clone scam defense",
+  "num_smoke_files": 5,
+  "files": [
+    "speaker01_01.wav",
+    "speaker01_02.wav",
+    "speaker01_03.wav",
+    "speaker02_01.wav",
+    "speaker02_02.wav"
+  ],
+  "audio_validation": [
+    {
+      "file": "speaker01_01.wav",
+      "speaker_id": "speaker01",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "samples": 80000,
+      "duration_s": 5.0,
+      "valid_sample_rate": true
+    },
+    {
+      "file": "speaker01_02.wav",
+      "speaker_id": "speaker01",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "samples": 80000,
+      "duration_s": 5.0,
+      "valid_sample_rate": true
+    },
+    {
+      "file": "speaker01_03.wav",
+      "speaker_id": "speaker01",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "samples": 80000,
+      "duration_s": 5.0,
+      "valid_sample_rate": true
+    },
+    {
+      "file": "speaker02_01.wav",
+      "speaker_id": "speaker02",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "samples": 80000,
+      "duration_s": 5.0,
+      "valid_sample_rate": true
+    },
+    {
+      "file": "speaker02_02.wav",
+      "speaker_id": "speaker02",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "samples": 80000,
+      "duration_s": 5.0,
+      "valid_sample_rate": true
+    }
+  ],
+  "ecapa": {
+    "model": "speechbrain/spkrec-ecapa-voxceleb",
+    "device": "cpu",
+    "same_speaker_pairs": [
+      {
+        "file_a": "speaker01_01.wav",
+        "file_b": "speaker01_02.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker01",
+        "cosine_similarity": 0.49551212787628174
+      },
+      {
+        "file_a": "speaker01_01.wav",
+        "file_b": "speaker01_03.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker01",
+        "cosine_similarity": 0.7164177894592285
+      },
+      {
+        "file_a": "speaker01_02.wav",
+        "file_b": "speaker01_03.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker01",
+        "cosine_similarity": 0.3747321367263794
+      },
+      {
+        "file_a": "speaker02_01.wav",
+        "file_b": "speaker02_02.wav",
+        "speaker_a": "speaker02",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.6888613104820251
+      }
+    ],
+    "different_speaker_pairs": [
+      {
+        "file_a": "speaker01_01.wav",
+        "file_b": "speaker02_01.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.03475409001111984
+      },
+      {
+        "file_a": "speaker01_01.wav",
+        "file_b": "speaker02_02.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.008379255421459675
+      },
+      {
+        "file_a": "speaker01_02.wav",
+        "file_b": "speaker02_01.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.0003978610038757324
+      },
+      {
+        "file_a": "speaker01_02.wav",
+        "file_b": "speaker02_02.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.0812346413731575
+      },
+      {
+        "file_a": "speaker01_03.wav",
+        "file_b": "speaker02_01.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.07011464983224869
+      },
+      {
+        "file_a": "speaker01_03.wav",
+        "file_b": "speaker02_02.wav",
+        "speaker_a": "speaker01",
+        "speaker_b": "speaker02",
+        "cosine_similarity": 0.10127179324626923
+      }
+    ],
+    "same_speaker_mean": 0.5688808411359787,
+    "different_speaker_mean": 0.04935871514802178,
+    "smoke_check": true
+  },
+  "aasist_l": {
+    "status": "PASS",
+    "model": "SpeechAntiSpoofingBenchmarks/AASIST-L",
+    "model_path": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\models\\AASIST-L\\aasist-l.onnx",
+    "device": "CPUExecutionProvider",
+    "input_name": "wav",
+    "input_shape": [
+      "batch",
+      64600
+    ],
+    "files": [
+      {
+        "file": "speaker01_01.wav",
+        "logits": [
+          3.5085368156433105,
+          -2.902353286743164
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker01_02.wav",
+        "logits": [
+          4.074875354766846,
+          -3.9182932376861572
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker01_03.wav",
+        "logits": [
+          4.687737941741943,
+          -4.023448467254639
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker02_01.wav",
+        "logits": [
+          -0.3051959276199341,
+          0.5122620463371277
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker02_02.wav",
+        "logits": [
+          3.2594919204711914,
+          -2.848508358001709
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "note": "Day-2 smoke test records raw detector logits only. No class direction, threshold, or calibrated probability is assumed yet."
+  },
+  "xlsr_sls": {
+    "status": "PASS",
+    "model": "SpeechAntiSpoofingBenchmarks/XLSR-SLS",
+    "model_path": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\models\\XLSR-SLS\\xlsr-sls.onnx",
+    "device": "CPUExecutionProvider",
+    "input_name": "wav",
+    "input_shape": [
+      "batch",
+      64600
+    ],
+    "files": [
+      {
+        "file": "speaker01_01.wav",
+        "logits": [
+          -0.00030286493711173534,
+          -8.102340698242188
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker01_02.wav",
+        "logits": [
+          -4.3549323081970215,
+          -0.012926474213600159
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker01_03.wav",
+        "logits": [
+          -0.015058647841215134,
+          -4.20332145690918
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker02_01.wav",
+        "logits": [
+          -7.916793346405029,
+          -0.00036459474358707666
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "file": "speaker02_02.wav",
+        "logits": [
+          -7.014840602874756,
+          -0.0008989107445813715
+        ],
+        "output_shapes": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "note": "Day-2 smoke test records raw detector logits only. No class direction, threshold, or calibrated probability is assumed yet."
+  },
+  "whisper": {
+    "status": "PASS",
+    "model": "faster-whisper:small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 1,
+    "files": [
+      {
+        "file": "speaker01_01.wav",
+        "detected_language": "en",
+        "language_probability": 0.7728331089019775,
+        "transcript": "Hello my name is Amrit I am doing training in FIC here in Bangalore"
+      },
+      {
+        "file": "speaker01_02.wav",
+        "detected_language": "hi",
+        "language_probability": 0.27615442872047424,
+        "transcript": "नमस्ते मेरा नदीद"
+      },
+      {
+        "file": "speaker01_03.wav",
+        "detected_language": "hi",
+        "language_probability": 0.19627253711223602,
+        "transcript": "नन्दा हैस्रु आम्रित्रा नन्गे ती बेकू, नन्गे कोपी बेकू"
+      },
+      {
+        "file": "speaker02_01.wav",
+        "detected_language": "en",
+        "language_probability": 0.8612809181213379,
+        "transcript": "Hello everybody, my name is Anushka Srivastava and today we are here recording my"
+      },
+      {
+        "file": "speaker02_02.wav",
+        "detected_language": "hi",
+        "language_probability": 0.8238998651504517,
+        "transcript": ""
+      }
+    ]
+  },
+  "codec_pipeline": [
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "amr_nb_4_75",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "4.75k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_4_75.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_4_75__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "amr_nb_7_4",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "7.4k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_7_4.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_7_4__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "amr_nb_12_2",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "12.2k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_12_2.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_nb_12_2__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "amr_wb_12_65",
+      "encoder": "libvo_amrwbenc",
+      "target_bitrate": "12.65k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_wb_12_65.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__amr_wb_12_65__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "gsm",
+      "encoder": "libgsm",
+      "target_bitrate": null,
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__gsm.gsm",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__gsm__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "opus_8",
+      "encoder": "libopus",
+      "target_bitrate": "8k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_8.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_8__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "opus_10",
+      "encoder": "libopus",
+      "target_bitrate": "10k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_10.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_10__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_01.wav",
+      "codec": "opus_12",
+      "encoder": "libopus",
+      "target_bitrate": "12k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_12.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_01__opus_12__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "amr_nb_4_75",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "4.75k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_4_75.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_4_75__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "amr_nb_7_4",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "7.4k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_7_4.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_7_4__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "amr_nb_12_2",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "12.2k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_12_2.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_nb_12_2__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "amr_wb_12_65",
+      "encoder": "libvo_amrwbenc",
+      "target_bitrate": "12.65k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_wb_12_65.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__amr_wb_12_65__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "gsm",
+      "encoder": "libgsm",
+      "target_bitrate": null,
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__gsm.gsm",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__gsm__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "opus_8",
+      "encoder": "libopus",
+      "target_bitrate": "8k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_8.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_8__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "opus_10",
+      "encoder": "libopus",
+      "target_bitrate": "10k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_10.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_10__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_02.wav",
+      "codec": "opus_12",
+      "encoder": "libopus",
+      "target_bitrate": "12k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_12.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_02__opus_12__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "amr_nb_4_75",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "4.75k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_4_75.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_4_75__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "amr_nb_7_4",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "7.4k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_7_4.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_7_4__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "amr_nb_12_2",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "12.2k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_12_2.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_nb_12_2__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "amr_wb_12_65",
+      "encoder": "libvo_amrwbenc",
+      "target_bitrate": "12.65k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_wb_12_65.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__amr_wb_12_65__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "gsm",
+      "encoder": "libgsm",
+      "target_bitrate": null,
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__gsm.gsm",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__gsm__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "opus_8",
+      "encoder": "libopus",
+      "target_bitrate": "8k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_8.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_8__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "opus_10",
+      "encoder": "libopus",
+      "target_bitrate": "10k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_10.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_10__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker01_03.wav",
+      "codec": "opus_12",
+      "encoder": "libopus",
+      "target_bitrate": "12k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_12.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker01_03__opus_12__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "amr_nb_4_75",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "4.75k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_4_75.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_4_75__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "amr_nb_7_4",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "7.4k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_7_4.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_7_4__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "amr_nb_12_2",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "12.2k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_12_2.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_nb_12_2__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "amr_wb_12_65",
+      "encoder": "libvo_amrwbenc",
+      "target_bitrate": "12.65k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_wb_12_65.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__amr_wb_12_65__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "gsm",
+      "encoder": "libgsm",
+      "target_bitrate": null,
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__gsm.gsm",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__gsm__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "opus_8",
+      "encoder": "libopus",
+      "target_bitrate": "8k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_8.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_8__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "opus_10",
+      "encoder": "libopus",
+      "target_bitrate": "10k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_10.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_10__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_01.wav",
+      "codec": "opus_12",
+      "encoder": "libopus",
+      "target_bitrate": "12k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_12.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_01__opus_12__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "amr_nb_4_75",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "4.75k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_4_75.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_4_75__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "amr_nb_7_4",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "7.4k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_7_4.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_7_4__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "amr_nb_12_2",
+      "encoder": "libopencore_amrnb",
+      "target_bitrate": "12.2k",
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_12_2.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_nb_12_2__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80320,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "amr_wb_12_65",
+      "encoder": "libvo_amrwbenc",
+      "target_bitrate": "12.65k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_wb_12_65.amr",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__amr_wb_12_65__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "gsm",
+      "encoder": "libgsm",
+      "target_bitrate": null,
+      "source_codec_rate_hz": 8000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__gsm.gsm",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__gsm__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "opus_8",
+      "encoder": "libopus",
+      "target_bitrate": "8k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_8.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_8__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "opus_10",
+      "encoder": "libopus",
+      "target_bitrate": "10k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_10.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_10__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    },
+    {
+      "input": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\raw\\smoke\\speaker02_02.wav",
+      "codec": "opus_12",
+      "encoder": "libopus",
+      "target_bitrate": "12k",
+      "source_codec_rate_hz": 16000,
+      "encoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_12.opus",
+      "decoded_file": "C:\\Users\\SIC\\Documents\\voice clone scam defense\\data\\codec\\day2\\speaker02_02__opus_12__decoded_16k.wav",
+      "decoded_sample_rate_hz": 16000,
+      "decoded_samples": 80000,
+      "status": "PASS"
+    }
+  ]
+}

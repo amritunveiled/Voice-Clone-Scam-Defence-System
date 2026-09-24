@@ -1,0 +1,16 @@
+speakers: 12
+languages:
+  core: [hindi, english]
+  exploratory: [kannada]
+enrollment:
+  clips_per_speaker: 5
+  seconds_per_clip: 6
+utterances:
+  total_per_speaker: 20
+  benign: 7
+  urgent_legit: 7
+  scam: 6
+audio:
+  sample_rate_hz: 16000
+  channels: 1
+  format: PCM_16_WAV

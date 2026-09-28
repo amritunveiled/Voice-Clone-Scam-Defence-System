@@ -1,0 +1,24 @@
+day: 6
+layer: 2
+protect_final_test: true
+evaluation_split: dev
+seed: 12345
+models:
+  baseline: SpeechAntiSpoofingBenchmarks/AASIST-L
+  main: SpeechAntiSpoofingBenchmarks/XLSR-SLS
+score_direction: higher_is_bonafide
+own_data_labels:
+  human: bonafide
+  clone: spoof
+metrics:
+  - EER
+  - AUC
+  - TPR_at_5_FPR
+  - FNR_at_EER_threshold
+  - score_means
+  - clean_vs_codec_drop
+public_subset:
+  dataset: ASVspoof5
+  source_split: dev_track_1
+  required_codecs: [C00, C09]
+  per_cell_default: 50

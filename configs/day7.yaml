@@ -1,0 +1,32 @@
+day: 7
+layer: 2_and_3
+evaluation_split: dev
+protect_final_test: true
+seed: 12345
+
+layer2_calibration:
+  method: platt_sigmoid
+  score_direction: higher_is_bonafide
+  source_scores: results/tables/day6_layer2_scores.csv
+  calibration_unit: model_dataset_codec
+  min_rows: 4
+
+asr:
+  model: small
+  device: cpu
+  compute_type: int8
+  beam_size: 1
+  vad_filter: false
+  use_manifest_language: true
+
+cer:
+  normalization: unicode_nfkc_whitespace_trim
+  group_by:
+    - language
+    - codec
+    - source_type
+
+languages:
+  english: en
+  hindi: hi
+  kannada: kn

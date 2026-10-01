@@ -1,0 +1,165 @@
+{
+  "day": 8,
+  "final_test_touched": false,
+  "train_script_ids": [
+    "B001",
+    "B002",
+    "B003",
+    "B004",
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "U001",
+    "U002",
+    "U003",
+    "U004",
+    "U005"
+  ],
+  "dev_script_ids": [
+    "B005",
+    "B006",
+    "S005",
+    "U006",
+    "U007"
+  ],
+  "model": {
+    "classifier": "logistic_regression",
+    "text_features": "character TF-IDF 3-5 grams",
+    "lexicon": "language-aware fuzzy indicators",
+    "fuzzy_weight": 0.35,
+    "classes": [
+      "benign",
+      "urgent_legit",
+      "scam"
+    ]
+  },
+  "evaluations": [
+    {
+      "condition": "reference_text_clean",
+      "n": 15,
+      "accuracy": 0.4,
+      "macro_f1": 0.35555555555555557,
+      "confusion_matrix_labels": [
+        "benign",
+        "urgent_legit",
+        "scam"
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "classification_report": {
+        "benign": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        },
+        "urgent_legit": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "scam": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.4166666666666667,
+          "recall": 0.5,
+          "f1-score": 0.35555555555555557,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.45,
+          "recall": 0.4,
+          "f1-score": 0.3466666666666667,
+          "support": 15.0
+        }
+      }
+    },
+    {
+      "condition": "whisper_asr",
+      "n": 126,
+      "accuracy": 0.40476190476190477,
+      "macro_f1": 0.39405162738496075,
+      "confusion_matrix_labels": [
+        "benign",
+        "urgent_legit",
+        "scam"
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          29
+        ],
+        [
+          12,
+          8,
+          16
+        ],
+        [
+          17,
+          1,
+          18
+        ]
+      ],
+      "classification_report": {
+        "benign": {
+          "precision": 0.46296296296296297,
+          "recall": 0.46296296296296297,
+          "f1-score": 0.46296296296296297,
+          "support": 54.0
+        },
+        "urgent_legit": {
+          "precision": 0.8888888888888888,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.35555555555555557,
+          "support": 36.0
+        },
+        "scam": {
+          "precision": 0.2857142857142857,
+          "recall": 0.5,
+          "f1-score": 0.36363636363636365,
+          "support": 36.0
+        },
+        "accuracy": 0.40476190476190477,
+        "macro avg": {
+          "precision": 0.5458553791887125,
+          "recall": 0.3950617283950617,
+          "f1-score": 0.39405162738496075,
+          "support": 126.0
+        },
+        "weighted avg": {
+          "precision": 0.5340136054421768,
+          "recall": 0.40476190476190477,
+          "f1-score": 0.4038961038961039,
+          "support": 126.0
+        }
+      }
+    }
+  ],
+  "asr_noise_ablation": {
+    "matched_comparisons": 126,
+    "prediction_flip_count": 69
+  }
+}

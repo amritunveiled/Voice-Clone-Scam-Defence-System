@@ -1,0 +1,20 @@
+day: 8
+evaluation_split: dev
+protect_final_test: true
+seed: 12345
+
+layer3:
+  labels: [benign, urgent_legit, scam]
+  text_features: char_tfidf
+  char_ngram_range: [3, 5]
+  max_features: 20000
+  classifier: logistic_regression
+  class_weight: balanced
+  max_iter: 2000
+  fuzzy_weight: 0.35
+  fuzzy_matching: rapidfuzz_ratio
+
+asr_noise_ablation:
+  source: results/tables/day7_whisper_cer_scores.csv
+  grouping: [language, codec, source_type]
+  use_manifest_language: true

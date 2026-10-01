@@ -1,0 +1,142 @@
+category,codec,condition,language,prediction,prob_benign,prob_scam,prob_urgent_legit,script_id,source_type,text,text_source
+benign,reference,reference_text_clean,hindi,scam,0.29449748850449703,0.43661260322299855,0.2688899082725045,B005,script_bank,I am reaching home in about twenty minutes.,reference_text
+benign,reference,reference_text_clean,english,scam,0.2899223232252331,0.42746227379980783,0.28261540297495913,B005,script_bank,I am reaching home in about twenty minutes.,reference_text
+benign,reference,reference_text_clean,kannada,scam,0.33886868357587957,0.39863085469866316,0.2625004617254573,B005,script_bank,I am reaching home in about twenty minutes.,reference_text
+benign,reference,reference_text_clean,hindi,benign,0.4361700878563317,0.3041560862429157,0.2596738259007525,B006,script_bank,The meeting has been moved to the afternoon.,reference_text
+benign,reference,reference_text_clean,english,benign,0.4167665706389989,0.3188929323103192,0.26434049705068186,B006,script_bank,The meeting has been moved to the afternoon.,reference_text
+benign,reference,reference_text_clean,kannada,benign,0.42343323523365983,0.31222626968514844,0.26434049508119173,B006,script_bank,The meeting has been moved to the afternoon.,reference_text
+urgent_legit,reference,reference_text_clean,hindi,scam,0.18122160295378653,0.5356454716159689,0.2831329254302446,U006,script_bank,"This is time sensitive, but do not share any password or OTP.",reference_text
+urgent_legit,reference,reference_text_clean,english,scam,0.18122160295378653,0.47002047420504567,0.34875792284116786,U006,script_bank,"This is time sensitive, but do not share any password or OTP.",reference_text
+urgent_legit,reference,reference_text_clean,kannada,scam,0.1812216056541989,0.5050204634616133,0.3137579308841878,U006,script_bank,"This is time sensitive, but do not share any password or OTP.",reference_text
+urgent_legit,reference,reference_text_clean,hindi,scam,0.2640103261613337,0.4697608289772535,0.26622884486141296,U007,script_bank,Please come as soon as you can and call the known family number.,reference_text
+urgent_legit,reference,reference_text_clean,english,scam,0.2863265231658537,0.43855689201299214,0.2751165848211543,U007,script_bank,Please come as soon as you can and call the known family number.,reference_text
+urgent_legit,reference,reference_text_clean,kannada,scam,0.3046466887131052,0.44212446841606223,0.2532288428708327,U007,script_bank,Please come as soon as you can and call the known family number.,reference_text
+scam,reference,reference_text_clean,hindi,scam,0.2143772196556707,0.443769608450374,0.3418531718939553,S005,script_bank,This test sentence asks for private account information on an unexpected call.,reference_text
+scam,reference,reference_text_clean,english,scam,0.21437722125290545,0.43020371373426686,0.3554190650128277,S005,script_bank,This test sentence asks for private account information on an unexpected call.,reference_text
+scam,reference,reference_text_clean,kannada,scam,0.28861964533979395,0.3589211274661673,0.3524592271940388,S005,script_bank,This test sentence asks for private account information on an unexpected call.,reference_text
+benign,clean,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,में राज्ट की खानी से ले गर वापस आजाँँगा,hypothesis
+benign,amr_nb_12_2,whisper_asr,hindi,scam,0.3047199297912764,0.3614765874753876,0.333803482733336,B005,human,बद्राज्ट के खाने सिब ले गर वापस आजाँँगा,hypothesis
+benign,amr_nb_4_75,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,बवाद्दी खानी से पहले गर वापस आजाँण़ा,hypothesis
+benign,amr_nb_7_4,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,में राज्प्टी खानी से फिछले गर वापस आजाँँगा,hypothesis
+benign,amr_wb_12_65,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,में राद्त की खाने से ले गर वापस आजाँँगा,hypothesis
+benign,gsm,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,बद्राज्प्टी खानी से पहले गर वापस आजाँगा,hypothesis
+benign,opus_10,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,में राथ की खानी से फेले गर वापस आजाँँँँ,hypothesis
+benign,opus_12,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,में राट के खानी से पहले गर वापस आजाँँँ,hypothesis
+benign,opus_8,whisper_asr,hindi,scam,0.29694215177878824,0.384809923566503,0.3182479246547087,B005,human,अदियाद तेखाने से पहले गर वापस आजाँगा,hypothesis
+benign,clean,whisper_asr,hindi,scam,0.33078830407278675,0.383271465226903,0.28594023070031027,B006,human,त्रेन लगब भ भीज मिनिद में आने वाली है,hypothesis
+benign,amr_nb_12_2,whisper_asr,hindi,scam,0.33078830407278675,0.383271465226903,0.28594023070031027,B006,human,त्रेम् रग्बग् भीज मिनिद में आने वाली है,hypothesis
+benign,amr_nb_4_75,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B006,human,त्रेम्श लग्बव्श भीज्मनिज में आने वाली है,hypothesis
+benign,amr_nb_7_4,whisper_asr,hindi,scam,0.33078830407278675,0.383271465226903,0.28594023070031027,B006,human,त्रेम्स लग्बग भीज मिनिद में आने वाली है,hypothesis
+benign,amr_wb_12_65,whisper_asr,hindi,scam,0.33078830407278675,0.383271465226903,0.28594023070031027,B006,human,त्रेम लगबग भीज मिनिद में आने वाली है,hypothesis
+benign,gsm,whisper_asr,hindi,benign,0.3683562992255463,0.3402644643306309,0.2913792364438227,B006,human,त्रेम् रग्बग् भीज्मिनिद में आने वाली है,hypothesis
+benign,opus_10,whisper_asr,hindi,benign,0.36583104416408607,0.34480992195114324,0.28935903388477063,B006,human,त्रेम लगब भ भीस मिनिद में आने वाली है,hypothesis
+benign,opus_12,whisper_asr,hindi,scam,0.33078830407278675,0.383271465226903,0.28594023070031027,B006,human,त्रेन लगब भ भीज मिनिद में आने वाली है,hypothesis
+benign,opus_8,whisper_asr,hindi,scam,0.3300671548596727,0.3823099167501146,0.28762292839021264,B006,human,त्रेंग लग्ब़ भीज मिनिद में आने वाली है,hypothesis
+scam,clean,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिक्षन वाग की जल्दी भुगदान करने के लिए दावाग,hypothesis
+scam,amr_nb_12_2,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,"यह गटोला परिक्षन वाख की जल्दी भुगदान करने के लिए, दावाख परिक्षन वाख की जल्दी बुगदान करने के लिए,",hypothesis
+scam,amr_nb_4_75,whisper_asr,hindi,urgent_legit,0.22694215665762565,0.3848099321676753,0.38824791117469903,S005,human,यह गटोला परिखषन वाप की जल्दी बुगदान करने किलिए दावाप परिखषन वाप की जल्दी बुगदान करने किलिए,hypothesis
+scam,amr_nb_7_4,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिखष्छन वाख की जल्दी भुगदान करने के लिए दावाख,hypothesis
+scam,amr_wb_12_65,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिक्षन वाग की जल्दी भुगदान करने के लिए दावाग,hypothesis
+scam,gsm,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिक्षन वाख की जल्दी भुगदान करने के लिए दावाख,hypothesis
+scam,opus_10,whisper_asr,hindi,scam,0.22694215665762565,0.3969838383903088,0.3760740049520655,S005,human,यह गटोला परिक्ष्छन वाप की जल्दी भुग्दान करने के लिए दावाप,hypothesis
+scam,opus_12,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिक्षेंवाए की जल्दी भुगदान करने के लिए दावाए,hypothesis
+scam,opus_8,whisper_asr,hindi,scam,0.22694215327592396,0.4039008323329117,0.36915701439116433,S005,human,यह गटोला परिक्षन वाख की जल्दी भुगदान करने के लिए दावाख,hypothesis
+urgent_legit,clean,whisper_asr,hindi,urgent_legit,0.22694215327592396,0.3541849256549747,0.41887292106910123,U006,human,पर्वारेक समस्या के कारन मुझे आपकी जल्दी ज़़ूरत है,hypothesis
+urgent_legit,amr_nb_12_2,whisper_asr,hindi,urgent_legit,0.2269421498942224,0.3553362436853959,0.41772160642038164,U006,human,पर्वारेग समस्या के कारन्द मुझे आपकी जल्दी सदूरद है,hypothesis
+urgent_legit,amr_nb_4_75,whisper_asr,hindi,urgent_legit,0.22694215665762565,0.3848099321676753,0.38824791117469903,U006,human,पर्वारिद समस्या के कारन्द मुझे आपकी जल्दी से दूरद हैं।,hypothesis
+urgent_legit,amr_nb_7_4,whisper_asr,hindi,urgent_legit,0.22694215327592396,0.3541849256549747,0.41887292106910123,U006,human,पर्वारिख समच्या के कारद मुझे आपकी जल्दी सदूरत है,hypothesis
+urgent_legit,amr_wb_12_65,whisper_asr,hindi,urgent_legit,0.22694215327592396,0.3541849256549747,0.41887292106910123,U006,human,पर्वारिक समस्या के कारद मुझे आपकी जल्दी ज़िर्द़ है,hypothesis
+urgent_legit,gsm,whisper_asr,hindi,urgent_legit,0.22694215327592396,0.3541849256549747,0.41887292106910123,U006,human,पर्वारित समस्या के कारन मुझे आपकी जल्दी सदूरत है।,hypothesis
+urgent_legit,opus_10,whisper_asr,hindi,scam,0.33629265885813053,0.36631048687055034,0.29739685427131907,U006,human,पर्वारिक समस्या के कारण मुझे आपकी ज़ड़ी सव़ुरत है,hypothesis
+urgent_legit,opus_12,whisper_asr,hindi,urgent_legit,0.27540368894249523,0.35250222648983287,0.37209408456767185,U006,human,पर्वारेएख समस्च्या करण मुझे आपकी जल्डी ज़़ुरच है,hypothesis
+urgent_legit,opus_8,whisper_asr,hindi,urgent_legit,0.27483688603287487,0.35533624103793465,0.3698268729291904,U006,human,पर्वारिक समस्या के कारन्द मुझे आपकी जल्डी सदूड़द है,hypothesis
+urgent_legit,clean,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,ग्रुप्या कोई कदम उदाने से पहले हमारे सामानी तरीके से,hypothesis
+urgent_legit,amr_nb_12_2,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,ग्रुप्या कोई कदम उटाने सी तहले हमारे सामानी तरीके से,hypothesis
+urgent_legit,amr_nb_4_75,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,गर्प्या कोई कदम उदाने से पहले हमारे सामान तरीके से,hypothesis
+urgent_legit,amr_nb_7_4,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,त्रुप्या कोई कदम उदाने से पहले हमारे सामानी तरीके से,hypothesis
+urgent_legit,amr_wb_12_65,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,ग्रुप्या कोई कदम उड़ने से पहले हमारे सामान तरीके से,hypothesis
+urgent_legit,gsm,whisper_asr,hindi,scam,0.310275486762374,0.4114765888604978,0.27824792437712814,U007,human,तरुप्या कोई कदम उदाने उसे पहले हमारे सामान तरीके से,hypothesis
+urgent_legit,opus_10,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,गरुप्या कोई कदम उड़ाने से तहले हमारे सामान तरीके से,hypothesis
+urgent_legit,opus_12,whisper_asr,hindi,scam,0.30860882165039516,0.40814325863654016,0.2832479197130646,U007,human,ग्रुप्या कोई कदम उड़ाने से पहले हमारे सामानी तरीके से,hypothesis
+urgent_legit,opus_8,whisper_asr,hindi,scam,0.310275486762374,0.4114765888604978,0.27824792437712814,U007,human,त्रुप्या कोई कदम उद़ाने सी तेहले हमारे सामानी तरीके से,hypothesis
+benign,clean,whisper_asr,kannada,scam,0.3030291054314033,0.39698383554490957,0.2999870590236871,B005,human,ಧೋಱ್ಲಿಂ ಹನುಗೆ ಸಿಲಿಳಿ ಮಯೂತಯತಿ ಮೋತನಿ ಮೋತಗಳಿ ರಂತಂತುರ ಮೋರಿ ಮೂತಿರಿಲು ದೆದಿ ಕಿಸ್ಲಿ ಮತಿ ಕದರಯಸಿ ಕಿವಾರಿ ಕಿರಿಲ್ಲು ನುಲಿ ಪಾಲಿ ಹತೆ ರನನಿ ಸಿಯರ್ಲಿತ ಮಙ�,hypothesis
+benign,amr_nb_12_2,whisper_asr,kannada,benign,0.5084236314856951,0.27999511058558024,0.21158125792872462,B005,human,राद्री वुत्तको मुदलो मैगे हंदिरगुत्तेने,hypothesis
+benign,amr_nb_4_75,whisper_asr,kannada,benign,0.36583104416408607,0.35592103230063943,0.2782479235352744,B005,human,ಇಕ ನ೏ರರ ಳಗಸರ ಸ್ಿನ್ಯಂ ಕೆಲಿಂದ ಊದ ಕಲಿಗಳೂದಂ ಮಿಕಾಂ ಮಾಹಾನಿಲಿ ನಾಹಳಿತಿದ್ ಕುವಾದುವಾಗುದಿಳಿಷದಿತಿದಾ ಕರರಿನ್ತೂದಿ ಮಿರ್ರಿಕಿದ ವಾದಿನ್ನ ಸಾನೆದ ಕಾಂದಿರ ಮ�,hypothesis
+benign,amr_nb_7_4,whisper_asr,kannada,benign,0.4916480402420675,0.2889275669624734,0.21942439279545922,B005,human,अराष्रि अतब को मधलू मेंगे लेईवि तुप्तेना,hypothesis
+benign,amr_wb_12_65,whisper_asr,kannada,benign,0.5116311400780094,0.2783027505130172,0.2100661094089733,B005,human,राद्री उट़ख्व मुद़ू मैंगे हिंदिरगूत्तेने,hypothesis
+benign,gsm,whisper_asr,kannada,scam,0.3283914226243241,0.36654905371670166,0.3050595236589742,B005,human,"ಕೆಂಗ್ರಿ ಕಾಗೆನು, ಜೊ ದೈನಿ ದೂಗೆಗ್ಯಾಯಾಗರಾವ್ದು ಪೆಲಿಲರಿಟು ಡ್ರವು ಗಾಬಿದಿ ಸೆನ್ರಾ ವಾೆಕು ಕಾರಿ ಜಾಯಾಯಾಗ್ರಿ ಜರಿಲಿಲಾಲಿ ರಿರಾನಿದಿ ಹೇಸಿ ಇನೆಕು ಆಲಯಾಪು ಲ",hypothesis
+benign,opus_10,whisper_asr,kannada,benign,0.5116311400780094,0.2783027505130172,0.2100661094089733,B005,human,राद्रि उट्टग्क्रू मुदलो मेंगे हैंदिर गुत्यने,hypothesis
+benign,opus_12,whisper_asr,kannada,benign,0.5116311400780094,0.2783027505130172,0.2100661094089733,B005,human,राद्री वूट़क्को मुदलो मैंगे हिंदिरगुत्तेने,hypothesis
+benign,opus_8,whisper_asr,kannada,scam,0.3494421541467799,0.36730992614015545,0.2832479197130646,B005,human,಑ ರಿ ಟ್ನ್ನಿಹಽಿಲಿಲಲೂ ಮ ದ್ಯಂಟಗಿತ್ತಾಡಾಲಿಲಿದಾವಾನು ಮಾನಿಂ ವಾದೆ ಮಂತ್ತಿಕಿಸಿಲಪುದಾದಿದೆ ಪಾರಗಾದ್ತ್ತ್ತಾಯನ್಩ ರಾರರನ್ನಿದಾಲೂ ಟರಿಳಾನಾರಿದರಾಾನುನು ವ�,hypothesis
+benign,clean,whisper_asr,kannada,scam,0.33300276064848894,0.361476590168598,0.305520649182913,B006,human,ಲಾರ ರಂದಳ ಹುಂಿ್ರನ ಸುಯಾಯ್ತೆ ಸುಗನಗತತಿದದ ಹಿದುಗೆ ಸುಗದು ಸುತದು ಮೆಸಿರಂತ ಕುಗಳಕಿಮಾದ್ಶಾಟಾರಂತರಿದ ಹಗ ಸಿಯಾತರಿದದಲ್ರರಿಕದಿದರೆತಾದು ಹುತಾರಿಲ ಸರಿನ್ಸ,hypothesis
+benign,amr_nb_12_2,whisper_asr,kannada,benign,0.46652583991142427,0.28645197668515593,0.2470221834034198,B006,human,only 10 mins till tomorrow,hypothesis
+benign,amr_nb_4_75,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,B006,human,", , , , , , , ,, , , , , , , , , ,",hypothesis
+benign,amr_nb_7_4,whisper_asr,kannada,scam,0.34171948290247595,0.35250222911617907,0.30577828798134493,B006,human,"ಕೂಮತೀಲಿಲೆ ಕೂದ್ಟದ್ಕರುದುದುದುದು, ಅನಾದ್ಗಳಾದ್ತೂದ್ದ್ಟರಿಂದುರುದ್ಟದ್ ದೆತ್ರಿ ಲಾದ್ರಿಲೆಲೆ ಕ್ಳಿ ಹಿದ್ತು ಅತ್ಟುದ್ತುದುದಿ ಹಿಹು ಕಾಯದಾರಿಕರಿ ಜಖೆನದ ಠಾದ ಗ",hypothesis
+benign,amr_wb_12_65,whisper_asr,kannada,scam,0.35194215139880863,0.36980992299280835,0.27824792560838296,B006,human,ಗಡಳದ ರಂಳನಾ ಮಪಾರವಿಂವಾಸು ವಾಂದ ಗಿಳಣಿಶತಿದದ ಬರ್ಲಾದಫನದ ವಾಳರೆಳಿಂದ​,hypothesis
+benign,gsm,whisper_asr,kannada,scam,0.3003989425248403,0.39172350194315597,0.3078775555320037,B006,human,ಎಂರೆಲ್ಲಿ ಬಲ್ಾ ಕರೆ ಮ್ಳಾಲ್ಲಿ ಱೋಟಿಂದ ಬಲ್ಲೆ ತ್ಲೆ ನುತ್ದೆಪೆಡಿಲುಪರ್ನು ಬಿಮದಿೆಸ್ಸಾಡಾಲ್ಲ ರಾಲ್ಲಿ ರಮ್ಲಿ ರಿನನತಿಲೆ ಕೋತೆದಿ ಭಿಸುದರಾ ಹಾಪೂದ್ ಸಾರೆ ರಸಿಸಿ ಹ,hypothesis
+benign,opus_10,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,B006,human,", , , , , , , , ,",hypothesis
+benign,opus_12,whisper_asr,kannada,scam,0.3489118516111503,0.35087052518389483,0.3002176232049548,B006,human,ೇೆಗೈಟ ರೇಯೀಯಾಯಾಯೀ ನಾದರೂದಿರಿರರೋನ ಀಧೆಗೆ ಎತ್ಳೃಂದ ಎಲೆಗೆ ಕಹಿರನಿಯ ಸಲೆಗೆ ಎರೋಯಿನೆ ಕಾರರೋನೆ ಇವಾಪ್ರಾನನಿದಿರೂ ಕನೆಗೆ ಎರೋತಿರೋತರೀ ಆಗೆಳುರು ಪಿರಸ್�,hypothesis
+benign,opus_8,whisper_asr,kannada,scam,0.3358189384588278,0.3710240217119688,0.2931570398292034,B006,human,ಎೇಚೋ ಎೊತ್ಯ ಎ 경우에는 ಮೋಟ್ನ ಡೋ 콘ಶೕೆ ಎೇನ ಇರರರತ್ರ ನ್ಲಾ ರಂತಥ್ತೆ ನ್ರರೆಚ್ತೆ ಳ್ಾ ಀಳಎ ಜಳರೆ ನಟೂತದ apocalypse ಎಂತ್ರ ಸ ಈದಿಸವಾರರದಹಿಾ �而且ಾರಸಾ ಪೇಯತೆ ಅಟದೆ ದಯಾಕಿನ ಬಾ� EC 💸ಿಗ್ಾ ರೋಟ್,hypothesis
+scam,clean,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,S005,human,,hypothesis
+scam,amr_nb_12_2,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,S005,human,", , , , , , , , , , , , , ,",hypothesis
+scam,amr_nb_4_75,whisper_asr,kannada,scam,0.30243234824873305,0.36833933210301756,0.32922831964824933,S005,human,ಢಾವ್ಸೋಪ್ದ ಮಾರಿತ್ಯೆ ಸಾಧಸತ್ತ್ರೆ ದಾರಿಮಾರೆ ಮಾರ್ನದ ಪಶಿತ್ನ ಮಾರ್ರೆ ಕಕರ್ದಿ ಸಾರ್ನ ಬೆಲುತ್ದರಾ ಮೋಕನವಾರಿ ಸಾತ್ತಿ ಸಾಣತಾರಿಮಾಲಿ ಸೇವಾರಲಿ ಸಾಯರಿ ಕೈಯರಿವದ�,hypothesis
+scam,amr_nb_7_4,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,S005,human,", , , , , , , , , , , , ,",hypothesis
+scam,amr_wb_12_65,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,S005,human,,hypothesis
+scam,gsm,whisper_asr,kannada,benign,0.3550467311778103,0.35461384284775754,0.2903394259744321,S005,human,ಲೇಲಿಬರ್ತ್ಕ್ತಿಣಕೆಂದ ಕೆ ಸೈರೀಪತಿಬಡೆಂದೆದಾರ್ತಾಸ್ತೆಚಾರ್ತೇಛಿದೆಗಾದಾರೆಲಿಕ್ತಾಕೆಗಾಲ್ನಿಕ್ದಾರ್ತಿಗೆದಾರೇಪೆರುತ್ತ್ನತಿನನಿದೆರನಾದೂದ ಇಲರಿದಿದಿ�,hypothesis
+scam,opus_10,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,S005,human,,hypothesis
+scam,opus_12,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,S005,human,,hypothesis
+scam,opus_8,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,S005,human,,hypothesis
+urgent_legit,clean,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,amr_nb_12_2,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,amr_nb_4_75,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,amr_nb_7_4,whisper_asr,kannada,scam,0.35094554606653533,0.3715600153145136,0.27749443861895123,U006,human,�【ಾಲಾಲಿ Sergeh ಬಿಿ ಮದ್只有 cuarto ಙಽನಿಸ ಮಾಕ gehabt waiter wont � ಬಕೊಲಡರ್ಂದುರ್ ಅಲು ಮೇಸೆ ನುಂದurday� ಡ೅ಟKN Hai,hypothesis
+urgent_legit,amr_wb_12_65,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,gsm,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,opus_10,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,U006,human,", , , , , , , , , , , , , ,",hypothesis
+urgent_legit,opus_12,whisper_asr,kannada,benign,0.576942149401622,0.24480992500304893,0.178247925595329,U006,human,,hypothesis
+urgent_legit,opus_8,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,U006,human,", , , , , , , , , , , , ,",hypothesis
+urgent_legit,clean,whisper_asr,kannada,benign,0.3860936277882862,0.3452863494768687,0.2686200227348452,U007,human,Valentine's Day,hypothesis
+urgent_legit,amr_nb_12_2,whisper_asr,kannada,scam,0.3214858836973289,0.35236191753048524,0.326152198772186,U007,human,ಸಾಳಗಾಗ STR,hypothesis
+urgent_legit,amr_nb_4_75,whisper_asr,kannada,scam,0.3283914226243241,0.36654905371670166,0.3050595236589742,U007,human,ರಶರ ಸಿಲೆ ಮಾದೆಗೆಂನರೆ ನುಮಾಲೆ ಮಾರೆ ಹ್ತರ್ತರಿಶೆ ಹಾವೆಲಾಸಿ ಬನಿ ಹ್ಯಾರೆ ಕುಜಾರಾವೆತರಿ ಸುಳನಯಳು ಬ ಬರ್ರೆ ಮಾರೆ ಮಾಯಾಸಿ ಮಾರಯಾಮೆ ಕುಹಾರಿರಾಸಿನಿಳ್ನು ಕುವ,hypothesis
+urgent_legit,amr_nb_7_4,whisper_asr,kannada,scam,0.33512397074359473,0.37462810914953093,0.2902479201068743,U007,human,ಜಾತ್ಲಾತಿ ಇ಻ಳ ಶಜಿತ್ಲ್ತಿ ನಾಗಾದ್ಲ್ ಮಾತ್ಲಿ ಮಿಂಸಿ ನಾಗಳಟಾ ಎತ್ಲಿ ಅದವರ ಸೆಟದಾ ಅಂಡ್ತ ಕಾತ್ಲಿ ತ್ಲಿ ಅದೆ ಕಾಣಮಲಾ ನಾರಿ ಮಾನಽಿ ಹಾತ್ಲಿ ಎತ್ಲಿ ನಿದಿ ಮಿತಿ ಎನಾತಾಯ�,hypothesis
+urgent_legit,amr_wb_12_65,whisper_asr,kannada,scam,0.3429947866421487,0.3498099201126356,0.3071952932452156,U007,human,ರಿಯಮತಂರ ಗೈತುಡ್ತಾರ್ತಿಂ ಮಾ ನೆತ್ಿಂ ಬರೂಳು ಮಬೇಅಲು ಆದ್ನತರೆಯಲಿನನಿ ಇರಿಳ್ಷುವ ಬರೇಡುವಽ್ತಿ ರಾಕುಡಿ ಬಿವ್ಷುವಾಲುಮ ಹೋರಲಿ ಅಯಳುತಾ ತದುಮಾರುತ್ತಾರ್ಹಿ ನೆಳ,hypothesis
+urgent_legit,gsm,whisper_asr,kannada,benign,0.3651472773070566,0.33814325677069296,0.2967094659222504,U007,human,ಸಮರೆವತು ಸಿಂದು ಮನಾಗ ಸಾನರರಿ ಮರಸರಲ್ನಲಾ ಕಾಂದರಾನ್ತುತ್ತರಂತದ ಬಾಯರಸಲ್ನಾಸ್ಜೆಂದುತು ಎಲಾಮುದನ್ ಸಿದಿಸು ಮಾಯಾರರ್ನ ಮರಿಸಲಾರಾಲೆ ಮಿರಕಶಿರಾದಿದಾವತಶಿಾ,hypothesis
+urgent_legit,opus_10,whisper_asr,kannada,benign,0.4723966870447569,0.29935538409009455,0.22824792886514858,U007,human,", , , , , , , , , , , , , ,",hypothesis
+urgent_legit,opus_12,whisper_asr,kannada,benign,0.3558424137774294,0.3513316587431506,0.29282592747941993,U007,human,ದೇಂದರ್ತಾಸ್ನ ದೇತೇರೆಬಾ ಬೀರೆತ್ಯ ಳಾಸ್ನ ಬೀರಾರ್ಲಿಲಿಯರೆ ಸಕಿಕ್ವಿಟೇ ಬಕರರ್ಲಿಕ ಎಲೆಲೆ ಪಯರ್ರಿಸ್ನಿಸ್ರದು ದದ್ರೊ ಆಸಾಿರಿಯರೆ ಪದ್ರಿನುವಾರ್ನ್಴ನಿಸ್ನುವ ಶರ,hypothesis
+urgent_legit,opus_8,whisper_asr,kannada,scam,0.33579383014732056,0.37543193087817045,0.28877423897450893,U007,human,ಜವಾನುನ ಯಾದಿಯಾಪಾದಿ ಫೇನ್ರಿನ್ತಠ್ತಿ ವಾದಿ ವೈರಿದಿ ಏನ್ಕುಲಿಂದಿ ವಾನ್ರಿನ್ರಿಗಾದೈ ಜ್ರಿದ ಮರಫೂದಹ್ ಬಡಿಕ್ಕು ರಡಿವಾ ಕೋಾದೈಳೇದ ಹವಾಲು ವಾಲು ವಾನ್ತಿ ಸಿವಳುವ �,hypothesis
+benign,clean,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B005,clone,अव रिके होई अद्व छूडी येले,hypothesis
+benign,amr_nb_12_2,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B005,clone,अव रिके होई अंद़ चूली ले,hypothesis
+benign,amr_nb_4_75,whisper_asr,hindi,scam,0.35522269898877523,0.3588370703109145,0.28594023070031027,B005,clone,अगर रिके होई अंदो चुरी ले,hypothesis
+benign,amr_nb_7_4,whisper_asr,hindi,benign,0.3615575401835106,0.35250222911617907,0.28594023070031027,B005,clone,अव रेके होई आद्व चूडी है ले,hypothesis
+benign,amr_wb_12_65,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B005,clone,अव रिके होई अंद़ छूडी एले,hypothesis
+benign,gsm,whisper_asr,hindi,benign,0.35421487913981414,0.34026446940096655,0.3055206514592192,B005,clone,और इके होई अद्वा चूली एडे,hypothesis
+benign,opus_10,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B005,clone,अव रेके होई अंद़ छूडी एले,hypothesis
+benign,opus_12,whisper_asr,hindi,benign,0.3706619680159704,0.3361142649535857,0.29322376703044384,B005,clone,आव रेके होई आद्छो चूडी ले,hypothesis
+benign,opus_8,whisper_asr,hindi,benign,0.39679509651664363,0.33745697885660275,0.2657479246267535,B005,clone,और रिके होई आद्छोडी एले,hypothesis
+scam,clean,whisper_asr,hindi,scam,0.32835827232342335,0.3896901014571172,0.2819516262194594,S005,clone,ती ती इज एज सर च्रीहनी एवज एजचन च्यान अन अन सेथ आलु,hypothesis
+scam,amr_nb_12_2,whisper_asr,hindi,scam,0.3298833291399618,0.39186874648291,0.27824792437712814,S005,clone,ती ती इज एज सर च्रेहनी एवज एजसन च्यान अन अन सेचचच यद आलु,hypothesis
+scam,amr_nb_4_75,whisper_asr,hindi,scam,0.33408500468799146,0.38766706886177166,0.27824792645023677,S005,clone,ती ती इज एज च़़ शेहनी योंच इद्सन च्यन अन अन सेचचच आलु,hypothesis
+scam,amr_nb_7_4,whisper_asr,hindi,scam,0.33408500468799146,0.38766706886177166,0.27824792645023677,S005,clone,ती ती इज एज सर चेहनी योंज इज्संच्यान अन अन सेथ चित आलु,hypothesis
+scam,amr_wb_12_65,whisper_asr,hindi,scam,0.32855505450459344,0.38029379244695827,0.29115115304844824,S005,clone,ती ती इज एज सर च्रीहनी योज इज्ददज्यन अन अन सेचछत आलु,hypothesis
+scam,gsm,whisper_asr,hindi,scam,0.33408500468799146,0.38766706886177166,0.27824792645023677,S005,clone,ती ती इज एज सर चेहनी एवन्च एजसन चयन अन अन सेचचचच आलु,hypothesis
+scam,opus_10,whisper_asr,hindi,scam,0.3071504851005147,0.40522658865223044,0.28762292624725483,S005,clone,ती ती इज एज सर च्रीहनी याँज एच्चन च्यान अन अन से च्ट आलु,hypothesis
+scam,opus_12,whisper_asr,hindi,scam,0.3319421481192601,0.3848099321676753,0.2832479197130646,S005,clone,ती ती इज एज सर च्रीहनी योंज एज संच्यान अन अन सेथ आलु,hypothesis
+scam,opus_8,whisper_asr,hindi,scam,0.3267159061618854,0.3873438631378043,0.28594023070031027,S005,clone,ती ती इज एज सर च्रीहनी एवज एजदन च्यान अन अन सेथचित आलु,hypothesis
+benign,clean,whisper_asr,kannada,benign,0.35588952064307094,0.3553362383904734,0.2887742409664556,B005,clone,ಸಾಪಾ ರಗ ಮಲಳ ಮಾಸಿ ಎಲಿ ಸಾರವಾಯ ಗಾ ಬ್ಸಾಯ ಕತಿರಂತಿಸಾಗಿಸ ಎಬ್ತಾರವಾರ ಬ೒ಬ್ರಾರಲ ಕಾರಿ ವ ಮಾನಮಾಪಿಗದಿ ಮಾಂಂದಿ ಕರಸಿ ಕರಾರರನು ಕಿಳಟಿಗಾ ಎವರಿ ಸಾಲಿಯಾರಿ ಕಲಹಯ,hypothesis
+benign,amr_nb_12_2,whisper_asr,kannada,scam,0.3494421541467799,0.3498099201126356,0.30074792574058445,B005,clone,ಸಿಸಿಂಫರ್ನಳಂಟಾಸಿಂಟನಾ ಮಂತಳಿಕಾ ಮನಂತಿಗಾ ಸಿಂತಿತಕುಪನ ಸಿರ ಸಿಮತ್ಯಾರ ಏದೈಚಿಗಾ ಸಿಕಾತಿಂಗಾ ಕಿಸಿಗಾ ಮಯಾನದ ಮಟಾತಿಸಿತುತಾಕ ಬರ್ನಚ ಮಿಸನಿಕಸಿಗಾ ಅನಶಿ ಮ,hypothesis
+benign,amr_nb_4_75,whisper_asr,kannada,benign,0.5084236314856951,0.27999511058558024,0.21158125792872462,B005,clone,"अद्रीया, घ्रें सुली रड़े।",hypothesis
+benign,amr_nb_7_4,whisper_asr,kannada,benign,0.4860767563109117,0.29192531361600665,0.22199793007308172,B005,clone,",,, ,, ,,",hypothesis
+benign,amr_wb_12_65,whisper_asr,kannada,scam,0.35194215139880863,0.36980992299280835,0.27824792560838296,B005,clone,ಎಲಿಕರ್ಜಾದಿಲ್ಗೆ ಕಾಲ್ಗಾಕಿಲೆತಾಲ್ಗಾಡ ಕಾಲುಕವ ಲುದುಂತುಲ್ ಬಂಡದಲಿ ಜಾರ್ಜಿದುಲ್ಗಾಗಾಮಿ ಜಿಚುಹ ತಕಾಡ ಮಿಸಾಳಾರಿ ಬಟಲ್ಗಾಲ್ಮಾವನರ್​​​​​​​​ ಝವ್ೌ ಮಾರ್ಗಾಲ್ಣರಿ,hypothesis
+benign,gsm,whisper_asr,kannada,benign,0.3765526339946265,0.34957033318977754,0.2738770328155959,B005,clone,ಇ ಸಾಟಾಗಾ resonance off,hypothesis
+benign,opus_10,whisper_asr,kannada,benign,0.37833750205413286,0.3424843375490219,0.2791781603968452,B005,clone,ಒನಾಮಂಧಂಗಿ ಲಿಗಿನಗ ಮಿಷುಂ ವಾಂರಿಂನ್ಲಿಗ್ಸಿಂತ್ತೆಫರಂ ಸಿನಿನ್ತ್ಯೆದಿಂತಿಡ್ನಾವಾವಾದ್ತಾಮುತ್ರಿ ಮಿದುದಿಾಲ್ಾನುಯವಾಯಾಾಲ್ಯಾಯಾಯಾರಿಂತ್ತುಡಿಿಾಯಾಾಯಾ,hypothesis
+benign,opus_12,whisper_asr,kannada,scam,0.3480959977876346,0.36596376938163433,0.285940232830731,B005,clone,ಕ ರಿಕರು ಸಂದಾಬ ಸಿಬ ಸಂದ ಸಂದ ವಾತ್ ಮಾನು ಶಿಳುಾನ ಕಾರು ಸೈಸಿಲಿ ವಾದುವನ ಹಾಸ ಮಾಡಿಲಿಲ ಹಾಯಾವನ ಸಿವಾನ ಸಾಡ ಸಿಲಿಲ ವಾಕ್ ಸಿಮಾವನ ಹಾನ ತಾಳದಿರಿಸಿ ಹಿ ಚಿಂದು ಹಾಡಾ�,hypothesis
+benign,opus_8,whisper_asr,kannada,scam,0.33117413228902504,0.3698882870776613,0.2989375806333136,B005,clone,ಗಾಗಿರ ಜಾಮಾರ ಮಾಮಂತ ಜಿನಾಗಾ ಬಿಮಾಂತ ಗಾನಂವಾಯಾಯಾಱತುರಿಸಾನಾಸಿಲಾತಿಂದ ಱ ಕಾಟಾತರಿದಶ್ತ ಬಿಂತಮಿಕೃತರರ ಅತಾತಿಬ ತಮಂನಿತಾ಴ದ ಕ಼ಿರಾಸಿ ಬಿಕ ಪತಾರಿಯಾಬಿಸ,hypothesis
+scam,clean,whisper_asr,kannada,benign,0.4860767563109117,0.29192531361600665,0.22199793007308172,S005,clone,ते जजे चले च्वाष हर सेल दंच अधन माजन अन अन से चें च्यलूं,hypothesis
+scam,amr_nb_12_2,whisper_asr,kannada,benign,0.42957372593194304,0.3184941362419629,0.251932137826094,S005,clone,ಸಾಲಿಲಾಲಿಗಳಿಥಿವಾರಿರಿಲಿಸಿಗಯಾಿಕಾರಿತಿಗಾ.,hypothesis
+scam,amr_nb_4_75,whisper_asr,kannada,benign,0.39273163019282453,0.3369151851033732,0.2703531847038022,S005,clone,ನೆಕುಗಲುಗಿಲುಗು ನೇನ್ರಾನುೆಯಾ ನಾಥೆಲಿಗಾಗಾಗಿಲಾನ್ಷೆಲಿಲ೉ಕಾಾಲಿಲಿಲಿಲ್ಸಲಾಲಿಲಿ ಲೇರ್ವಾಲಿಲಾಲಿಲೆಲಾಲಿ.,hypothesis
+scam,amr_nb_7_4,whisper_asr,kannada,benign,0.36220785935317706,0.35133165612552575,0.28646048452129713,S005,clone,ಬರಱತಾಕರಿಕ್ತೃ ಕರಸತಿ ರಕೆರಿಂದಾದಿ ಬಾಟಿವಾಣನೂದಾಕ್ತ್ತಿವಾಳಽತ್ ಸಿಕ್ತಾತೇಲೀಲುಂದುತುತ್ನ್ತಾತಾತಾತುಝ ಮಾಡಿಷಿನಾಕ್ತಾತಾಯಾಕುದರಿಕ ಕೋರನಾನಿತುತಾತು�,hypothesis
+scam,amr_wb_12_65,whisper_asr,kannada,benign,0.4860767563109117,0.29192531361600665,0.22199793007308172,S005,clone,ती चजय सेच च्रेज वास हर सेल ईदनच अपन माज़ान अन अन सेच ईच यज हूँ,hypothesis
+scam,gsm,whisper_asr,kannada,benign,0.4860767563109117,0.29192531361600665,0.22199793007308172,S005,clone,"तिया जजज, चाले च्वास, हर सैयर ददन्च, अट्टन माजन अन, अन से चें च्यालू।",hypothesis
+scam,opus_10,whisper_asr,kannada,benign,0.3574155240481341,0.35664424525155564,0.28594023070031027,S005,clone,ಕೆಳೆ ಪಹಿಯವೆ ನ್ಯದರ್ಯೆ ಚೆಗಳಾಹಿಂತರಿಕರುದಲಿ ಕೈದರ್ಲಾರೆ ಕೇಸಿಳ ಮದರ್್ಲಿ ಸಲಿಕದರ್ಲಿ ಕೆಟ್ಲಾಕಿ ರೆಳಿ ಕೊರಿ ಸುತಿಙರತರಿಕ ಕೇಳಿತಿ ಕರಾಮಿ ಕಿಸಿರ್ಲಿ ಸುತರಿ�,hypothesis
+scam,opus_12,whisper_asr,kannada,benign,0.35194215139880863,0.34480992452017734,0.303247924081014,S005,clone,ಬೆಗೆನಾಗೆಸಿಂಲಿನುಲಿಸಿ​ ಮುಡರವೆಯೋ ಬೆಝತಿ ಮೋರಂತಿ ಕಾರಂತು ಬೂತುಲೇಡಿ​​​ अण अँ शे च्या च्या लू,hypothesis
+scam,opus_8,whisper_asr,kannada,benign,0.36694216017429976,0.3498099201126356,0.2832479197130646,S005,clone,"तिय च pytanie उच़रे च्वाूस हर सायोल था च, अप्तन माजन आण आइझे चें चेलूँ.",hypothesis
